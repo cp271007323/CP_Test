@@ -1,0 +1,85 @@
+//
+//  CPTableView.h
+//  绘制-tableView
+//
+//  Created by lk06 on 17/1/13.
+//  Copyright © 2017年 lk06. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+typedef void(^CPPromptBoxClipBlock)(NSIndexPath *indexPath);
+typedef void(^CPPromptBoxCancleBlock)();
+
+typedef enum : NSUInteger {
+    CPPromptBoxView_TYPE_Normal,
+    CPPromptBoxView_TYPE_Others,
+} CPPromptBoxView_TYPE;
+
+@interface CPPromptBoxView : UIView
+@property (nonatomic , assign) CGFloat              radiu;              //圆角半径
+@property (nonatomic , assign) CGFloat              triangleHeight;     //三角形高度
+@property (nonatomic , assign) CGFloat              triangleBottomWidth;//三角形底部宽度
+@property (nonatomic , strong) UIColor              *color;             //框背景颜色
+@property (nonatomic , strong) UIColor              *textColor;         //文本颜色
+@property (nonatomic , strong) UIColor              *separatorColor;    //线的颜色
+@property (nonatomic , assign) NSTextAlignment      textAlignment;      //文本位置
+@property (nonatomic , strong) UIView               *clipView;          //被点击的视图
+@property (nonatomic , assign) CGFloat              width;              //视图宽度
+@property (nonatomic , assign , readonly) CGFloat   height;             //显示视图高度
+@property (nonatomic , assign) UIEdgeInsets         cellEdgeInsets;     //线的长度
+@property (nonatomic , assign) NSInteger            currentChoose;
+@property (nonatomic , copy) CPPromptBoxCancleBlock cancleBlock;
+@property (nonatomic , assign) CPPromptBoxView_TYPE type;
+
+
++(instancetype)PromptBoxViewWithClipView:(UIView *)clipView;
+
+- (void)addTitle:(NSArray *)title images:(NSArray *)images clipBack:(CPPromptBoxClipBlock)block;
+//- (void)addTitle:(NSString *)title clipBack:(CPPromptBoxClipBlock)block;
+//- (void)addImage:(UIImage *)image clipBack:(CPPromptBoxClipBlock)block;
+- (void)show;
+@end
+
+
+
+@protocol CPPromptBoxDelegate <NSObject>
+
+-(void)promptBoxSelector:(CPPromptBoxClipBlock)clipblock indexPath:(NSIndexPath *)indexPath;
+
+@end
+
+@interface CPPromptBox : UIView
+@property (nonatomic , assign) CGFloat              radiu;              //圆角半径
+@property (nonatomic , assign) CGFloat              triangleHeight;     //三角形高度
+@property (nonatomic , assign) CGFloat              triangleBottomWidth;//三角形底部宽度
+@property (nonatomic , strong) UIColor              *color;             //框背景颜色
+@property (nonatomic , strong) UIColor              *textColor;         //文本颜色
+@property (nonatomic , strong) UIColor              *separatorColor;    //线的颜色
+@property (nonatomic , assign) NSTextAlignment      textAlignment;      //文本位置
+@property (nonatomic , strong) UIView               *clipView;          //被点击的视图
+@property (nonatomic , assign) CGFloat              width;              //视图宽度
+@property (nonatomic , assign , readonly) CGFloat   height;             //显示视图高度
+@property (nonatomic , strong) NSMutableArray       *titles;
+@property (nonatomic , strong) NSMutableArray       *images;
+@property (nonatomic , strong) NSMutableArray       *blocks;
+@property (nonatomic , assign) NSInteger            currentChoose;
+@property (nonatomic , assign) UIEdgeInsets         cellEdgeInsets;     //线的长度
+
+@property (nonatomic , assign) CPPromptBoxView_TYPE type;
+
+@property (nonatomic , assign) id<CPPromptBoxDelegate> promitBoxDeleget;
+
++(instancetype)promtBoxWithClipView:(UIView *)clipView;
+
+- (instancetype)initWithClipView:(UIView *)clipView;
+
+- (void)refreshPromitBoxView;
+- (void)promitBoxRemoveFromSuperViewWithValues:(NSArray *)values isDelegate:(BOOL)isDelegate;
+@end
+
+
+@interface UITableViewCell (Identifier)
++(NSString *)identifier;
+@end
+

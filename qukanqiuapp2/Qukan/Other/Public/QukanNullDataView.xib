@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="Qukan_xib" id="Ls2-Kl-C2N" customClass="QukanNullDataView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qukan_Null_Data" translatesAutoresizingMaskIntoConstraints="NO" id="CW8-4p-G9o">
+                    <rect key="frame" x="132" y="323" width="150" height="150"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7R-9v-ftx">
+                    <rect key="frame" x="174.5" y="493" width="65.5" height="19.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CW8-4p-G9o" firstAttribute="centerY" secondItem="Ls2-Kl-C2N" secondAttribute="centerY" constant="-50" id="F3E-Op-O7h"/>
+                <constraint firstItem="c7R-9v-ftx" firstAttribute="top" secondItem="CW8-4p-G9o" secondAttribute="bottom" constant="20" id="Xh9-K6-I0V"/>
+                <constraint firstItem="CW8-4p-G9o" firstAttribute="centerX" secondItem="Ls2-Kl-C2N" secondAttribute="centerX" id="e5l-GC-FcP"/>
+                <constraint firstItem="c7R-9v-ftx" firstAttribute="centerX" secondItem="Ls2-Kl-C2N" secondAttribute="centerX" id="h0R-p0-QSr"/>
+            </constraints>
+            <connections>
+                <outlet property="contentImageView" destination="CW8-4p-G9o" id="4Nn-yB-t05"/>
+                <outlet property="contentLabel" destination="c7R-9v-ftx" id="QPX-ti-IbV"/>
+            </connections>
+            <point key="canvasLocation" x="216" y="9.8950524737631191"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Qukan_Null_Data" width="150" height="150"/>
+    </resources>
+</document>

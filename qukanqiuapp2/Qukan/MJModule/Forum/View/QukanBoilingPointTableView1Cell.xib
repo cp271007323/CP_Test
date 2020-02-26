@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="Qukan_xib" selectionStyle="none" indentationWidth="10" rowHeight="141" id="KGk-i7-Jjw" customClass="QukanBoilingPointTableView1Cell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="141"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="141"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HEd-vc-5Jr">
+                        <rect key="frame" x="254" y="57" width="50" height="27"/>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.21465118838028169" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="izu-de-5DV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="关注">
+                            <color key="titleColor" red="0.92549019610000005" green="0.25882352939999997" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="follow:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="DfM-3j-rln"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0E-uJ-ebW">
+                        <rect key="frame" x="77" y="48.5" width="164" height="18"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="LTd-Vd-6e4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.058823529411764705" green="0.054901960784313725" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="244个关注者 · 14 沸点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXL-0C-umK">
+                        <rect key="frame" x="77" y="74.5" width="161" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="NW4-Yw-NPc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8C-9e-auc">
+                        <rect key="frame" x="0.0" y="140" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YXB-vm-09H"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qukan_login" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-VO-kN7">
+                        <rect key="frame" x="15" y="45.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="681-Eh-tFp"/>
+                            <constraint firstAttribute="width" constant="50" id="Vl6-0x-z1w"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="K0E-uJ-ebW" firstAttribute="leading" secondItem="FXL-0C-umK" secondAttribute="leading" id="0ns-pt-arG"/>
+                    <constraint firstItem="nxP-VO-kN7" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2i5-xa-W7J"/>
+                    <constraint firstItem="c8C-9e-auc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3pn-kK-FbM"/>
+                    <constraint firstItem="HEd-vc-5Jr" firstAttribute="leading" secondItem="FXL-0C-umK" secondAttribute="trailing" constant="16" id="5gV-cF-nKN"/>
+                    <constraint firstItem="HEd-vc-5Jr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CLC-AE-dNj"/>
+                    <constraint firstItem="nxP-VO-kN7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="K2j-hv-PAe"/>
+                    <constraint firstItem="K0E-uJ-ebW" firstAttribute="leading" secondItem="nxP-VO-kN7" secondAttribute="trailing" constant="12" id="OeY-S0-M6D"/>
+                    <constraint firstAttribute="bottom" secondItem="c8C-9e-auc" secondAttribute="bottom" id="WAR-1v-vtI"/>
+                    <constraint firstAttribute="trailing" secondItem="HEd-vc-5Jr" secondAttribute="trailing" constant="20" id="cPX-6F-BbO"/>
+                    <constraint firstItem="HEd-vc-5Jr" firstAttribute="leading" secondItem="K0E-uJ-ebW" secondAttribute="trailing" constant="13" id="dzC-FF-SHu"/>
+                    <constraint firstItem="K0E-uJ-ebW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="-13" id="hHl-7a-3cB"/>
+                    <constraint firstAttribute="trailing" secondItem="c8C-9e-auc" secondAttribute="trailing" id="hzt-FL-wVc"/>
+                    <constraint firstItem="FXL-0C-umK" firstAttribute="top" secondItem="K0E-uJ-ebW" secondAttribute="bottom" constant="8" id="klH-1V-25e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="75" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="contentLabel" destination="K0E-uJ-ebW" id="VUD-m4-97q"/>
+                <outlet property="followButton" destination="HEd-vc-5Jr" id="KM4-iT-rEr"/>
+                <outlet property="otherLabel" destination="FXL-0C-umK" id="dCB-Cz-fUp"/>
+            </connections>
+            <point key="canvasLocation" x="140.80000000000001" y="181.25937031484258"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Qukan_login" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>

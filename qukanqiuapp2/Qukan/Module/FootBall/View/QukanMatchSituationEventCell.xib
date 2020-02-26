@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="Qukan_xib" selectionStyle="none" indentationWidth="10" rowHeight="266" id="KGk-i7-Jjw" customClass="QukanMatchSituationEventCell">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="266"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="522" height="265.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qukan_xzjh2" translatesAutoresizingMaskIntoConstraints="NO" id="rl6-3C-Akv">
+                        <rect key="frame" x="15" y="20" width="224" height="67.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="76" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qrH-3w-lYc">
+                        <rect key="frame" x="249" y="20" width="24" height="24"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="RyD-A9-bP2"/>
+                            <constraint firstAttribute="height" constant="24" id="ZCm-Kn-47l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qukan_xzjh3" translatesAutoresizingMaskIntoConstraints="NO" id="HT7-yE-QJC">
+                        <rect key="frame" x="283" y="20" width="224" height="67.5"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="261" verticalHuggingPriority="261" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" image="Qukan_jinqiu" translatesAutoresizingMaskIntoConstraints="NO" id="7e2-FD-tUw">
+                        <rect key="frame" x="214" y="26" width="12" height="12"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="莫罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗罗多罗" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1Rg-Se-G0a">
+                        <rect key="frame" x="30" y="25" width="179" height="57.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大师的撒打算京东大师的撒打算京东大师的撒打算京东大师的撒打算京东大师的撒打算京东大师的撒打算京东" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="CNL-YF-WWd">
+                        <rect key="frame" x="313" y="25" width="179" height="57.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H2N-Ey-obF">
+                        <rect key="frame" x="260" y="44" width="2" height="221.5"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="WmR-aY-GYh"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLp-J0-WyG">
+                        <rect key="frame" x="260" y="0.0" width="2" height="20"/>
+                        <color key="backgroundColor" red="0.96862745100000003" green="0.70980392160000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="2" id="bJO-of-i5r"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="261" verticalHuggingPriority="261" horizontalCompressionResistancePriority="760" verticalCompressionResistancePriority="760" image="Qukan_hongpai" translatesAutoresizingMaskIntoConstraints="NO" id="OoI-1P-GNO">
+                        <rect key="frame" x="296" y="26" width="12" height="12"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="GLp-J0-WyG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1ti-Jr-k0z"/>
+                    <constraint firstItem="1Rg-Se-G0a" firstAttribute="centerY" secondItem="rl6-3C-Akv" secondAttribute="centerY" id="ADF-ql-VzN"/>
+                    <constraint firstItem="H2N-Ey-obF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CPz-7z-sgS"/>
+                    <constraint firstItem="7e2-FD-tUw" firstAttribute="leading" secondItem="1Rg-Se-G0a" secondAttribute="trailing" constant="5" id="GED-0r-tzF"/>
+                    <constraint firstItem="H2N-Ey-obF" firstAttribute="top" secondItem="qrH-3w-lYc" secondAttribute="bottom" id="GXd-yQ-Nns"/>
+                    <constraint firstItem="CNL-YF-WWd" firstAttribute="leading" secondItem="HT7-yE-QJC" secondAttribute="leading" constant="30" id="Gr8-3p-ar5"/>
+                    <constraint firstItem="1Rg-Se-G0a" firstAttribute="leading" secondItem="rl6-3C-Akv" secondAttribute="leading" constant="15" id="HpB-JN-N1O"/>
+                    <constraint firstItem="rl6-3C-Akv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Qng-gz-CH4"/>
+                    <constraint firstItem="rl6-3C-Akv" firstAttribute="top" secondItem="qrH-3w-lYc" secondAttribute="top" id="RSl-bq-F55"/>
+                    <constraint firstItem="1Rg-Se-G0a" firstAttribute="top" secondItem="rl6-3C-Akv" secondAttribute="top" constant="5" id="Umk-ZU-pjG"/>
+                    <constraint firstItem="HT7-yE-QJC" firstAttribute="leading" secondItem="qrH-3w-lYc" secondAttribute="trailing" constant="10" id="Wd5-PM-DNl"/>
+                    <constraint firstItem="CNL-YF-WWd" firstAttribute="trailing" secondItem="HT7-yE-QJC" secondAttribute="trailing" constant="-15" id="YT7-ZI-62U"/>
+                    <constraint firstItem="qrH-3w-lYc" firstAttribute="leading" secondItem="rl6-3C-Akv" secondAttribute="trailing" constant="10" id="ZZc-of-dHI"/>
+                    <constraint firstItem="qrH-3w-lYc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="a6X-WB-Xc0"/>
+                    <constraint firstAttribute="bottom" secondItem="H2N-Ey-obF" secondAttribute="bottom" id="bvL-0t-zct"/>
+                    <constraint firstItem="HT7-yE-QJC" firstAttribute="top" secondItem="qrH-3w-lYc" secondAttribute="top" id="dUo-qc-Pxz"/>
+                    <constraint firstItem="GLp-J0-WyG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="fGL-Aw-W73"/>
+                    <constraint firstItem="CNL-YF-WWd" firstAttribute="top" secondItem="HT7-yE-QJC" secondAttribute="top" constant="5" id="gCV-wK-LFM"/>
+                    <constraint firstItem="CNL-YF-WWd" firstAttribute="leading" secondItem="OoI-1P-GNO" secondAttribute="trailing" constant="5" id="huj-fD-SE1"/>
+                    <constraint firstItem="qrH-3w-lYc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="moF-il-LEh"/>
+                    <constraint firstItem="qrH-3w-lYc" firstAttribute="top" secondItem="GLp-J0-WyG" secondAttribute="bottom" id="mpG-5N-7YC"/>
+                    <constraint firstItem="1Rg-Se-G0a" firstAttribute="trailing" secondItem="rl6-3C-Akv" secondAttribute="trailing" constant="-30" id="pWw-A7-k0y"/>
+                    <constraint firstItem="CNL-YF-WWd" firstAttribute="centerY" secondItem="HT7-yE-QJC" secondAttribute="centerY" id="qtZ-Df-0hF"/>
+                    <constraint firstAttribute="trailing" secondItem="HT7-yE-QJC" secondAttribute="trailing" constant="15" id="ryw-bs-nWg"/>
+                    <constraint firstItem="7e2-FD-tUw" firstAttribute="centerY" secondItem="OoI-1P-GNO" secondAttribute="centerY" id="sxs-Vi-xgw"/>
+                    <constraint firstItem="OoI-1P-GNO" firstAttribute="centerY" secondItem="qrH-3w-lYc" secondAttribute="centerY" id="xp0-nq-Ha6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="eventImageView_1" destination="7e2-FD-tUw" id="36W-Yo-tFi"/>
+                <outlet property="eventImageView_2" destination="OoI-1P-GNO" id="S9H-6B-10m"/>
+                <outlet property="img_leftBg" destination="rl6-3C-Akv" id="Q39-vX-VRV"/>
+                <outlet property="img_rgihtBg" destination="HT7-yE-QJC" id="ORr-jU-kZF"/>
+                <outlet property="nameLabel_1" destination="1Rg-Se-G0a" id="BzK-Bv-Df5"/>
+                <outlet property="nameLabel_2" destination="CNL-YF-WWd" id="bW7-3d-dYL"/>
+                <outlet property="timeLabel" destination="qrH-3w-lYc" id="Lqw-wo-ivE"/>
+            </connections>
+            <point key="canvasLocation" x="163.768115942029" y="43.526785714285715"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Qukan_hongpai" width="12" height="12"/>
+        <image name="Qukan_jinqiu" width="12" height="12"/>
+        <image name="Qukan_xzjh2" width="108" height="21.5"/>
+        <image name="Qukan_xzjh3" width="89.5" height="22"/>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="Qukan_xib" id="iN0-l3-epB" customClass="QukanBPDetailCommentPutInView">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcl-1A-472">
+                    <rect key="frame" x="15" y="10" width="385" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="输入评论..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7o5-Eo-aEz">
+                            <rect key="frame" x="20" y="14.333333333333332" width="64.666666666666671" height="15.666666666666668"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="7o5-Eo-aEz" firstAttribute="centerY" secondItem="lcl-1A-472" secondAttribute="centerY" id="1Nu-WA-MPV"/>
+                        <constraint firstItem="7o5-Eo-aEz" firstAttribute="leading" secondItem="lcl-1A-472" secondAttribute="leading" constant="20" id="vww-d7-eEE"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdU-yb-7yq">
+                    <rect key="frame" x="420" y="10" width="43" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title=" 111" image="Qukan_zanH">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="btn_zanClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="iKV-6W-JbL"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxl-mN-PgT">
+                    <rect key="frame" x="0.0" y="0.0" width="478" height="1"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="1fY-ms-1RM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="bxl-mN-PgT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9v1-YW-1He"/>
+                <constraint firstItem="lcl-1A-472" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Fux-dy-RSo"/>
+                <constraint firstAttribute="trailing" secondItem="zdU-yb-7yq" secondAttribute="trailing" constant="15" id="JTr-Dc-99J"/>
+                <constraint firstItem="zdU-yb-7yq" firstAttribute="leading" secondItem="lcl-1A-472" secondAttribute="trailing" constant="20" id="TY2-Kp-tDU"/>
+                <constraint firstAttribute="bottom" secondItem="lcl-1A-472" secondAttribute="bottom" constant="10" id="Z4S-sl-RNk"/>
+                <constraint firstItem="bxl-mN-PgT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cmk-WY-TZd"/>
+                <constraint firstItem="lcl-1A-472" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="fwi-Jr-UCK"/>
+                <constraint firstAttribute="trailing" secondItem="bxl-mN-PgT" secondAttribute="trailing" id="p02-De-Rcy"/>
+                <constraint firstItem="zdU-yb-7yq" firstAttribute="top" secondItem="lcl-1A-472" secondAttribute="top" id="rqe-7q-FJ1"/>
+                <constraint firstItem="zdU-yb-7yq" firstAttribute="bottom" secondItem="lcl-1A-472" secondAttribute="bottom" id="vZh-Jd-CYn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btn_zan" destination="zdU-yb-7yq" id="kpe-vT-oOu"/>
+                <outlet property="constraint_viewBottom" destination="Z4S-sl-RNk" id="VXZ-pe-uvr"/>
+                <outlet property="view_comment" destination="lcl-1A-472" id="PSX-jw-r8g"/>
+            </connections>
+            <point key="canvasLocation" x="184.05797101449278" y="-157.33695652173915"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Qukan_zanH" width="20" height="20"/>
+    </resources>
+</document>

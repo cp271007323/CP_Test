@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="Qukan_xib" id="gTV-IL-0wX" customClass="QukanLineupHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="42"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="42"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uwa-OX-Ows">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="42"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFM-cd-RqS">
+                                <rect key="frame" x="38" y="0.0" width="24" height="24"/>
+                                <color key="backgroundColor" red="1" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="BiV-wj-mqy"/>
+                                    <constraint firstAttribute="width" constant="24" id="XzM-QR-EfL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWn-TR-h0q">
+                                <rect key="frame" x="2" y="25" width="96" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cFM-cd-RqS" firstAttribute="centerX" secondItem="Uwa-OX-Ows" secondAttribute="centerX" id="5YG-wl-9N3"/>
+                            <constraint firstItem="dWn-TR-h0q" firstAttribute="top" secondItem="cFM-cd-RqS" secondAttribute="bottom" constant="1" id="OLD-Up-XrS"/>
+                            <constraint firstAttribute="trailing" secondItem="dWn-TR-h0q" secondAttribute="trailing" constant="2" id="OyT-b5-lUm"/>
+                            <constraint firstAttribute="bottom" secondItem="dWn-TR-h0q" secondAttribute="bottom" id="Sce-2L-qEA"/>
+                            <constraint firstItem="cFM-cd-RqS" firstAttribute="top" secondItem="Uwa-OX-Ows" secondAttribute="top" id="cP6-F7-SLL"/>
+                            <constraint firstAttribute="height" constant="42" id="sIg-vn-4E1"/>
+                            <constraint firstItem="dWn-TR-h0q" firstAttribute="leading" secondItem="Uwa-OX-Ows" secondAttribute="leading" constant="2" id="xXB-Rk-ImE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Uwa-OX-Ows" secondAttribute="trailing" id="Efw-Fo-NUI"/>
+                <constraint firstItem="Uwa-OX-Ows" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cru-bs-9fr"/>
+                <constraint firstItem="Uwa-OX-Ows" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="eGT-oK-0EG"/>
+            </constraints>
+            <connections>
+                <outlet property="nameLabel" destination="dWn-TR-h0q" id="ncd-Co-HU1"/>
+                <outlet property="numberLabel" destination="cFM-cd-RqS" id="z5D-VF-qBB"/>
+            </connections>
+            <point key="canvasLocation" x="54.399999999999999" y="48.575712143928037"/>
+        </collectionViewCell>
+    </objects>
+</document>

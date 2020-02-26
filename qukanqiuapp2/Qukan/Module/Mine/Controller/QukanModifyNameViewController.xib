@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QukanModifyNameViewController">
+            <connections>
+                <outlet property="nameTextField" destination="KQN-BE-Tt8" id="MqD-WD-oU6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="Qukan_xib" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb9-Sh-Io9">
+                    <rect key="frame" x="0.0" y="10" width="414" height="45"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入名字" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KQN-BE-Tt8">
+                            <rect key="frame" x="20" y="2" width="374" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view alpha="0.30000001192092896" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p0o-NR-wCC">
+                            <rect key="frame" x="0.0" y="44.5" width="414" height="0.5"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="jO4-GU-qBH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="KQN-BE-Tt8" secondAttribute="trailing" constant="20" id="7gi-6I-wI2"/>
+                        <constraint firstItem="KQN-BE-Tt8" firstAttribute="leading" secondItem="hb9-Sh-Io9" secondAttribute="leading" constant="20" id="JOV-Q3-8ca"/>
+                        <constraint firstItem="p0o-NR-wCC" firstAttribute="leading" secondItem="hb9-Sh-Io9" secondAttribute="leading" id="M25-vq-Es7"/>
+                        <constraint firstAttribute="height" constant="45" id="MDx-Sz-ub7"/>
+                        <constraint firstAttribute="trailing" secondItem="p0o-NR-wCC" secondAttribute="trailing" id="aAy-bf-URF"/>
+                        <constraint firstItem="KQN-BE-Tt8" firstAttribute="top" secondItem="hb9-Sh-Io9" secondAttribute="top" constant="2" id="c2z-AY-Vxh"/>
+                        <constraint firstItem="p0o-NR-wCC" firstAttribute="top" secondItem="KQN-BE-Tt8" secondAttribute="bottom" constant="0.5" id="twr-Sl-uCQ"/>
+                        <constraint firstAttribute="bottom" secondItem="p0o-NR-wCC" secondAttribute="bottom" id="wWF-g7-slV"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" tag="300" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqx-8q-ses">
+                    <rect key="frame" x="20" y="95" width="374" height="44"/>
+                    <color key="backgroundColor" red="0.37254901959999998" green="0.7843137255" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="v0O-fU-wcA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchUpInside" id="zbJ-nc-Uzg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hb9-Sh-Io9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BUw-YQ-yfm"/>
+                <constraint firstItem="Aqx-8q-ses" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="RW0-m1-JWK"/>
+                <constraint firstAttribute="trailing" secondItem="Aqx-8q-ses" secondAttribute="trailing" constant="20" id="UfV-lq-4eh"/>
+                <constraint firstAttribute="trailing" secondItem="hb9-Sh-Io9" secondAttribute="trailing" id="aX2-cC-zx3"/>
+                <constraint firstItem="Aqx-8q-ses" firstAttribute="top" secondItem="hb9-Sh-Io9" secondAttribute="bottom" constant="40" id="lj0-IT-x4I"/>
+                <constraint firstItem="hb9-Sh-Io9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="ui1-ev-8x4"/>
+            </constraints>
+            <point key="canvasLocation" x="87.039999999999992" y="43.696292783143662"/>
+        </view>
+    </objects>
+</document>

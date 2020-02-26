@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QukanAboutViewController">
+            <connections>
+                <outlet property="logoImageView" destination="oFR-4x-uc8" id="ZYt-6C-V6B"/>
+                <outlet property="nameLabel" destination="2Cq-Dq-J8y" id="2bP-0j-Web"/>
+                <outlet property="versionLabel" destination="Acr-u3-kMa" id="m0Z-Tt-d4l"/>
+                <outlet property="view" destination="Mxf-w3-8JD" id="WFH-da-cBE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="Qukan_xib" id="Mxf-w3-8JD">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qukan_login" translatesAutoresizingMaskIntoConstraints="NO" id="oFR-4x-uc8">
+                    <rect key="frame" x="147.5" y="243.5" width="80" height="80"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="4i2-v7-iMw"/>
+                        <constraint firstAttribute="height" constant="80" id="LHp-MV-n3g"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cq-Dq-J8y">
+                    <rect key="frame" x="167" y="338.5" width="41.5" height="18"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <color key="textColor" red="0.058823529411764705" green="0.054901960784313725" blue="0.23921568627450981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="------" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acr-u3-kMa">
+                    <rect key="frame" x="173" y="371.5" width="29.5" height="12"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="oFR-4x-uc8" firstAttribute="centerX" secondItem="Mxf-w3-8JD" secondAttribute="centerX" id="3m4-6a-MnA"/>
+                <constraint firstItem="oFR-4x-uc8" firstAttribute="centerY" secondItem="Mxf-w3-8JD" secondAttribute="centerY" constant="-50" id="7RF-jP-OQO"/>
+                <constraint firstItem="Acr-u3-kMa" firstAttribute="top" secondItem="2Cq-Dq-J8y" secondAttribute="bottom" constant="15" id="93N-D4-ouR"/>
+                <constraint firstItem="Acr-u3-kMa" firstAttribute="centerX" secondItem="Mxf-w3-8JD" secondAttribute="centerX" id="FlE-OS-3mX"/>
+                <constraint firstItem="2Cq-Dq-J8y" firstAttribute="top" secondItem="oFR-4x-uc8" secondAttribute="bottom" constant="15" id="LSk-Oj-KQ7"/>
+                <constraint firstItem="2Cq-Dq-J8y" firstAttribute="centerX" secondItem="Mxf-w3-8JD" secondAttribute="centerX" id="ZN2-rP-oAv"/>
+            </constraints>
+            <point key="canvasLocation" x="-139.19999999999999" y="19.790104947526238"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Qukan_login" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>

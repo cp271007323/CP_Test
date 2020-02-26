@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="Qukan_xib" id="iN0-l3-epB" customClass="QukanBolingPointHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="174"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ngD-Pg-1xh">
+                    <rect key="frame" x="15" y="10" width="424" height="164"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Qukan_Hot" translatesAutoresizingMaskIntoConstraints="NO" id="a1v-Y6-hCI">
+                            <rect key="frame" x="15" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="1Ei-74-KBQ"/>
+                                <constraint firstAttribute="height" constant="20" id="Nt0-hF-AoR"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门沸点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeZ-VL-qRM">
+                            <rect key="frame" x="45.000000000000007" y="9.6666666666666679" width="69.666666666666686" height="21"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7B-jp-HFI">
+                            <rect key="frame" x="15" y="40.666666666666664" width="394" height="113.33333333333334"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="v7B-jp-HFI" secondAttribute="bottom" constant="10" id="NXU-ZM-qaG"/>
+                        <constraint firstItem="a1v-Y6-hCI" firstAttribute="top" secondItem="ngD-Pg-1xh" secondAttribute="top" constant="10" id="NxF-6E-B7o"/>
+                        <constraint firstItem="v7B-jp-HFI" firstAttribute="top" secondItem="zeZ-VL-qRM" secondAttribute="bottom" constant="10" id="OLQ-lb-qdj"/>
+                        <constraint firstItem="a1v-Y6-hCI" firstAttribute="leading" secondItem="ngD-Pg-1xh" secondAttribute="leading" constant="15" id="Tgz-wp-xp1"/>
+                        <constraint firstItem="zeZ-VL-qRM" firstAttribute="centerY" secondItem="a1v-Y6-hCI" secondAttribute="centerY" id="clE-J7-H2u"/>
+                        <constraint firstAttribute="trailing" secondItem="v7B-jp-HFI" secondAttribute="trailing" constant="15" id="pav-e8-AH6"/>
+                        <constraint firstItem="zeZ-VL-qRM" firstAttribute="leading" secondItem="a1v-Y6-hCI" secondAttribute="trailing" constant="10" id="rNM-Xh-ytM"/>
+                        <constraint firstItem="v7B-jp-HFI" firstAttribute="leading" secondItem="a1v-Y6-hCI" secondAttribute="leading" id="soW-GS-exe"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ngD-Pg-1xh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="N27-vu-wfe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ngD-Pg-1xh" secondAttribute="trailing" constant="15" id="RL7-Ko-I6O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ngD-Pg-1xh" secondAttribute="bottom" id="YFw-H7-Qzw"/>
+                <constraint firstItem="ngD-Pg-1xh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="sCv-Fh-o38"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lab_content" destination="v7B-jp-HFI" id="HZ1-bn-dhV"/>
+            </connections>
+            <point key="canvasLocation" x="207.24637681159422" y="-504.61956521739137"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Qukan_Hot" width="21" height="20"/>
+    </resources>
+</document>

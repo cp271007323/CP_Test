@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uVf-Gx-nfE" customClass="QukanFailureView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view tag="99" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-ci-IhK">
+                    <rect key="frame" x="57" y="298" width="300" height="300"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="Qukan_xib" image="Qukan_network" translatesAutoresizingMaskIntoConstraints="NO" id="Ozc-m4-5Vl">
+                            <rect key="frame" x="69" y="100" width="162.5" height="162.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载失败，点击重试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEL-d2-Edz">
+                            <rect key="frame" x="81" y="277.5" width="138" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="kKw-rR-vsw"/>
+                        <constraint firstItem="XEL-d2-Edz" firstAttribute="top" secondItem="Ozc-m4-5Vl" secondAttribute="bottom" constant="15" id="pHn-xl-Lc0"/>
+                        <constraint firstAttribute="width" constant="300" id="qS1-ks-tlg"/>
+                        <constraint firstItem="Ozc-m4-5Vl" firstAttribute="top" secondItem="Ao6-ci-IhK" secondAttribute="top" constant="100" id="r62-WG-vOf"/>
+                        <constraint firstItem="Ozc-m4-5Vl" firstAttribute="centerX" secondItem="Ao6-ci-IhK" secondAttribute="centerX" id="tBo-zd-xpY"/>
+                        <constraint firstItem="XEL-d2-Edz" firstAttribute="centerX" secondItem="Ao6-ci-IhK" secondAttribute="centerX" id="z53-jf-odW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ao6-ci-IhK" firstAttribute="centerX" secondItem="uVf-Gx-nfE" secondAttribute="centerX" id="Mrs-C6-V0J"/>
+                <constraint firstItem="Ao6-ci-IhK" firstAttribute="centerY" secondItem="uVf-Gx-nfE" secondAttribute="centerY" id="hdC-j5-XV3"/>
+            </constraints>
+            <connections>
+                <outlet property="CenterY" destination="hdC-j5-XV3" id="s4K-yw-t4i"/>
+            </connections>
+            <point key="canvasLocation" x="325.60000000000002" y="-180.35982008995504"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Qukan_network" width="162.5" height="162.5"/>
+    </resources>
+</document>

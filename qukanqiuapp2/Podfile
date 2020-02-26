@@ -1,0 +1,60 @@
+inhibit_all_warnings!
+platform :ios, '8.0'
+target 'Qukan' do
+use_frameworks!
+
+pod 'UMCCommon'
+pod 'UMCPush'
+pod 'UMCSecurityPlugins'
+#pod 'UMCAnalytics'
+pod 'UMCShare/UI'
+#pod 'UMCShare/Social/WeChat'
+ pod 'UMCShare/Social/ReducedWeChat'
+#pod 'UMCShare/Social/QQ'
+#pod 'MJExtension'
+pod 'UMCShare/Social/ReducedQQ'
+
+pod 'YYKit'
+pod 'ReactiveObjC'
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'SDWebImage', '~> 5.1.0'
+pod 'MJRefresh','3.2.0'
+
+#pod 'NIMSDK_LITE'
+pod 'FCUUID'
+pod 'LBLelinkKit', '30212'
+pod 'TZImagePickerController'
+pod 'SDAutoLayout'
+
+pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'SVProgressHUD', '~> 2.2.5'
+pod 'HBDNavigationBar', '~> 1.5.2'
+
+pod 'ZFPlayer', '~> 3.0'
+pod 'ZFPlayer/AVPlayer', '~> 3.0'
+
+
+pod 'JXCategoryView', '1.5.2'
+pod 'JXPagingView/Pager', '2.0.1'
+
+pod 'TBActionSheet'
+pod 'DZNEmptyDataSet'
+pod 'WebViewJavascriptBridge', '~> 6.0'
+
+pod 'FLEX', :configurations => ['Debug']
+
+pod 'KSPhotoBrowser'
+
+pod 'TABAnimated', '2.2.1'
+
+#pod 'MJExtension'
+
+#pod 'QukanPopup'
+pod 'libOpenInstallSDK'
+
+#pod 'SCLAlertView-Objective-C'
+
+
+end
